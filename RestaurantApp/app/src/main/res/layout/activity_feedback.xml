@@ -1,0 +1,92 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="?android:attr/colorBackground">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Feedback"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/monet_pink"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/feedbackEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Write your feedback..."
+        android:padding="12dp"
+        android:background="@drawable/rounded_background"
+        android:inputType="textMultiLine"
+        android:minHeight="100dp"
+        android:textSize="16sp"
+        android:textColor="@color/text_primary"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rate your experience:"
+        android:textSize="16sp"
+        android:textColor="@color/text_primary"
+        android:layout_marginBottom="8dp"/>
+
+    <RadioGroup
+        android:id="@+id/ratingRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/ratingExcellent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Excellent"
+            android:textSize="14sp"/>
+
+        <RadioButton
+            android:id="@+id/ratingVeryGood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Very Good"
+            android:textSize="14sp"/>
+
+        <RadioButton
+            android:id="@+id/ratingGood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Good"
+            android:textSize="14sp"/>
+
+        <RadioButton
+            android:id="@+id/ratingFair"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fair"
+            android:textSize="14sp"/>
+
+        <RadioButton
+            android:id="@+id/ratingPoor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Poor"
+            android:textSize="14sp"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/submitFeedbackButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit Feedback"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/monet_pink"
+        android:layout_marginTop="16dp"
+        android:paddingVertical="12dp"/>
+
+</LinearLayout>

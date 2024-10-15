@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/background_color">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please provide your feedback:"
+        android:textSize="20sp"
+        android:layout_marginBottom="16dp" />
+
+    <RadioGroup
+        android:id="@+id/likertScaleGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioVeryDissatisfied"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Very Dissatisfied" />
+
+        <RadioButton
+            android:id="@+id/radioDissatisfied"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dissatisfied" />
+
+        <RadioButton
+            android:id="@+id/radioNeutral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Neutral" />
+
+        <RadioButton
+            android:id="@+id/radioSatisfied"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Satisfied" />
+
+        <RadioButton
+            android:id="@+id/radioVerySatisfied"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Very Satisfied" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/feedbackEditText"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:hint="Additional comments"
+        android:inputType="textMultiLine"
+        android:gravity="top"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_background" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit Feedback"
+        android:backgroundTint="@color/button_color"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="16dp" />
+</LinearLayout>

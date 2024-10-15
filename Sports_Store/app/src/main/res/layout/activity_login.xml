@@ -1,0 +1,99 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pastel_blue_50"
+    android:padding="16dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="16dp">
+
+            <!-- App Logo -->
+            <ImageView
+                android:id="@+id/appLogo"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:src="@drawable/ic_store_logo"
+                android:layout_gravity="center" />
+            <TextView
+                android:id="@+id/usernameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SPORTS STORE APP"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/pastel_blue_700"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="8dp"/>
+
+            <!-- Username Input -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:endIconMode="clear_text"
+                app:boxStrokeColor="@color/pastel_blue_500"
+                app:boxStrokeWidthFocused="2dp"
+                app:hintTextColor="@color/pastel_blue_300"
+                app:hintTextAppearance="@style/HintTextStyle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/usernameInput"
+                    android:hint="Username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:singleLine="true"
+                    android:textColor="@color/pastel_blue_700"
+                    android:textColorHint="@color/pastel_blue_300" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Password Input with Eye Icon -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:endIconMode="password_toggle"
+                app:boxStrokeColor="@color/pastel_blue_500"
+                app:cursorColor="@color/pastel_blue_500"
+                app:endIconTint="@color/pastel_blue_500"
+                app:boxStrokeWidthFocused="2dp"
+                app:hintTextColor="@color/pastel_blue_300"
+                app:hintTextAppearance="@style/HintTextStyle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/passwordInput"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:singleLine="true"
+                    android:textColor="@color/pastel_blue_700"
+                    android:textColorHint="@color/pastel_blue_300" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Login Button -->
+            <Button
+                android:id="@+id/loginButton"
+                android:text="Login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/pastel_blue_500"
+                android:layout_marginTop="24dp"
+                android:elevation="4dp"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </FrameLayout>
+</ScrollView>

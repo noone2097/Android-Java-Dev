@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/monet_pink_lighter">
+
+    <!-- Image of the Selected Menu Item -->
+    <ImageView
+        android:id="@+id/selectedItemImageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Name of the Selected Menu Item -->
+    <TextView
+        android:id="@+id/selectedItemTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menu Item Name"
+        android:textSize="18sp"
+        android:textColor="@color/text_primary"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp"/>
+
+    <!-- Price of the Selected Menu Item -->
+    <TextView
+        android:id="@+id/selectedItemPriceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="₱0.00"
+        android:textSize="16sp"
+        android:textColor="@color/text_secondary"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Option for Extra Cheese -->
+    <CheckBox
+        android:id="@+id/extraCheeseCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Extra Cheese - ₱40.00"
+        android:textColor="@color/text_primary"/>
+
+    <!-- Option for Extra Bacon -->
+    <CheckBox
+        android:id="@+id/extraBaconCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Extra Bacon - ₱50.00"
+        android:textColor="@color/text_primary"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Button to Proceed to the Total Calculation -->
+    <Button
+        android:id="@+id/proceedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Proceed to Total"
+        android:backgroundTint="@color/monet_pink"
+        android:textColor="@android:color/white"/>
+</LinearLayout>

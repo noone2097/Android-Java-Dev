@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.SportsZone" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/Primary</item>
+        <item name="colorPrimaryDark">@color/Dark</item>
+        <item name="colorAccent">@color/Accent</item>
+        <item name="android:buttonStyle">@style/ModernButtonStyle</item>
+    </style>
+
+    <style name="Theme.SportsZone" parent="Base.Theme.SportsZone" />
+    <style name="ModernButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="android:backgroundTint">@color/Primary</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:elevation">4dp</item>
+    </style>
+</resources>

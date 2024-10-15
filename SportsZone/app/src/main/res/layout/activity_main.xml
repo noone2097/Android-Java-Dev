@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@color/background">
+
+    <Button
+        android:id="@+id/btnBMI"
+        style="@style/ModernButtonStyle"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="BMI Calculator" />
+
+    <Button
+        android:id="@+id/btnSportsStore"
+        style="@style/ModernButtonStyle"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Sports Store" />
+
+    <Button
+        android:id="@+id/btnUpcomingEvents"
+        style="@style/ModernButtonStyle"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Upcoming Events"/>
+
+    <Button
+        android:id="@+id/btnSportNews"
+        style="@style/ModernButtonStyle"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Sports News"/>
+
+    <Button
+        android:id="@+id/btnFeedback"
+        style="@style/ModernButtonStyle"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Feedback"/>
+
+    <Button
+        android:id="@+id/btnAbout"
+        style="@style/ModernButtonStyle"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="About"/>
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="@color/monet_pink_lighter">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="@color/monet_pink_light">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/ic_logo"
+            android:contentDescription="Restaurant Logo"
+            android:scaleType="centerCrop"
+            android:padding="1dp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to our Restaurant"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/monet_pink"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif-medium"/>
+
+    <Button
+        android:id="@+id/menuButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Menu"
+        android:backgroundTint="@color/monet_pink"
+        android:textColor="@color/text_on_pink"
+        android:layout_marginBottom="16dp"
+        android:elevation="4dp"
+        android:paddingVertical="12dp"
+        android:layout_marginHorizontal="16dp"
+        android:backgroundTintMode="@color/monet_pink_light"
+        android:fontFamily="sans-serif-medium"/>
+    <Button
+        android:id="@+id/profileButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        android:backgroundTint="@color/monet_pink"
+        android:textColor="@color/text_on_pink"
+        android:layout_marginBottom="16dp"
+        android:elevation="4dp"
+        android:paddingVertical="12dp"
+        android:layout_marginHorizontal="16dp"
+        android:backgroundTintMode="@color/monet_pink_light"
+        android:fontFamily="sans-serif-medium"/>
+</LinearLayout>

@@ -1,0 +1,31 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Sports_Store" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary colors for the app theme -->
+        <item name="colorPrimary">@color/pastel_blue_500</item>
+        <item name="colorPrimaryVariant">@color/pastel_blue_700</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+
+        <!-- Secondary color options -->
+        <item name="colorSecondary">@color/pastel_blue_300</item>
+        <item name="colorSecondaryVariant">@color/pastel_blue_600</item>
+        <item name="colorOnSecondary">@android:color/white</item>
+
+        <!-- Background color and surface color -->
+        <item name="colorSurface">@color/pastel_blue_50</item>
+        <item name="colorOnBackground">@color/text_color_primary</item>
+        <item name="colorOnSurface">@color/text_color_secondary</item>
+
+        <!-- Error color -->
+        <item name="colorError">@color/error_color</item>
+        <item name="colorOnError">@android:color/white</item>
+
+        <!-- Button styles -->
+        <item name="buttonStyle">@style/Widget.Material3.Button</item>
+        <item name="colorButtonNormal">@color/button_color</item>
+        <item name="android:textColorPrimary">@color/text_color_primary</item>
+        <item name="android:textColorSecondary">@color/text_color_secondary</item>
+    </style>
+
+    <style name="Theme.Sports_Store" parent="Base.Theme.Sports_Store" />
+</resources>

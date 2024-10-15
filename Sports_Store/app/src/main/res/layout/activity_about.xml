@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@color/background_color">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About Me"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_color_primary"
+        android:layout_marginBottom="16dp"/>
+
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_profile"
+        android:contentDescription="Profile Image"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello! My name is Regin Mae Cruda."
+        android:textSize="18sp"
+        android:textColor="@color/text_color_primary"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/descriptionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I am passionate about creating meaningful apps and exploring new technologies."
+        android:textSize="16sp"
+        android:textColor="@color/text_color_primary"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:backgroundTint="@color/pastel_blue_700"
+        android:textColor="@color/pastel_blue_50"
+        android:onClick="onBackPressed"/>
+</LinearLayout>

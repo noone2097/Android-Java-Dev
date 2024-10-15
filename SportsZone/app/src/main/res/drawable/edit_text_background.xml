@@ -1,0 +1,29 @@
+<!-- res/drawable/edit_text_background.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Shadow effect -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#F5F5F5" /> <!-- Light shadow color -->
+            <corners android:radius="12dp" />
+        </shape>
+    </item>
+
+    <!-- Main background with border -->
+    <item android:left="2dp" android:bottom="2dp" android:right="2dp" android:top="2dp">
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#FFFFFF"
+                android:endColor="#ECECEC"
+                android:angle="90" /> <!-- Subtle gradient from white to light gray -->
+            <corners android:radius="12dp" />
+            <stroke
+                android:width="2dp"
+                android:color="#DDDDDD" /> <!-- Light gray border -->
+            <padding
+                android:left="12dp"
+                android:top="12dp"
+                android:right="12dp"
+                android:bottom="12dp" />
+        </shape>
+    </item>
+</layer-list>

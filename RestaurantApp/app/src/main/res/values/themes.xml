@@ -1,0 +1,28 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Define your pink color palette -->
+    <color name="pink_primary">#E91E63</color> <!-- Main pink color for your theme -->
+    <color name="pink_primary_variant">#C2185B</color> <!-- Darker shade of primary -->
+    <color name="pink_secondary">#F48FB1</color> <!-- Lighter pink for secondary elements -->
+    <color name="pink_background">#FFFFFF</color> <!-- Background color for screens -->
+    <color name="pink_surface">#FFFFFF</color> <!-- Surface color for cards, dialogs, etc. -->
+    <color name="pink_on_primary">#FFFFFF</color> <!-- Text/icon color on primary background -->
+    <color name="pink_on_secondary">#000000</color> <!-- Text/icon color on secondary background -->
+    <color name="pink_on_background">#000000</color> <!-- Text color on background -->
+    <color name="pink_on_surface">#000000</color> <!-- Text color on surfaces -->
+
+    <!-- Base application theme. -->
+    <style name="Base.Theme.RestaurantApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Light theme colors -->
+        <item name="colorPrimary">@color/pink_primary</item>
+        <item name="colorPrimaryVariant">@color/pink_primary_variant</item>
+        <item name="colorSecondary">@color/pink_secondary</item>
+        <item name="android:colorBackground">@color/pink_background</item>
+        <item name="colorSurface">@color/pink_surface</item>
+        <item name="colorOnPrimary">@color/pink_on_primary</item>
+        <item name="colorOnSecondary">@color/pink_on_secondary</item>
+        <item name="colorOnBackground">@color/pink_on_background</item>
+        <item name="colorOnSurface">@color/pink_on_surface</item>
+    </style>
+
+    <style name="Theme.RestaurantApp" parent="Base.Theme.RestaurantApp" />
+</resources>
