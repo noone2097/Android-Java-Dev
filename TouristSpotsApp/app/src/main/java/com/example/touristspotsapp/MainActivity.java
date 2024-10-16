@@ -7,7 +7,7 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
-    private Button spotsButton, souvenirButton, feedbackButton, aboutButton, contactButton;
+    private Button spotsButton, souvenirButton, feedbackButton, aboutButton, contactButton, logoutButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,11 +19,16 @@ public class MainActivity extends AppCompatActivity {
         feedbackButton = findViewById(R.id.feedbackButton);
         aboutButton = findViewById(R.id.aboutButton);
         contactButton = findViewById(R.id.contactButton);
+        logoutButton = findViewById(R.id.logoutButton);
 
         spotsButton.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, TouristSpotsListActivity.class)));
         souvenirButton.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, SouvenirListActivity.class)));
         feedbackButton.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, FeedbackActivity.class)));
         aboutButton.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, AboutActivity.class)));
         contactButton.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, ContactUsActivity.class)));
+        logoutButton.setOnClickListener(v -> {
+            startActivity(new Intent(MainActivity.this, LoginActivity.class));
+            finish();
+        });
     }
 }
